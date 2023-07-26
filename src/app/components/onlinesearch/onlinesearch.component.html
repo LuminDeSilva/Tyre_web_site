@@ -1,0 +1,28 @@
+<div class="category-selector">
+    <label for="category">Select a category:</label>
+    <select id="category" #categorySelect (change)="onCategoryChange(categorySelect.value)">
+      <option *ngFor="let category of categories" [value]="category">
+        {{ category }}
+      </option>
+    </select>
+  </div>
+  
+  <div class="product-container">
+    <div *ngIf="selectedCategory && products.length > 0">
+      <h3>Products in {{ selectedCategory }}</h3>
+      <div class="product-card" *ngFor="let product of products">
+        <div class="image-container">
+          <img [src]="product.image" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h4>{{ product.name }}</h4>
+          <p class="price">{{ product.price }}</p>
+          <p class="description">{{ product.details }}</p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedCategory && products.length === 0">
+      <p>No products found in {{ selectedCategory }}.</p>
+    </div>
+  </div>
+  

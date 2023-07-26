@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/homepage">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/addproduct">Add product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/onlinesearch">Category</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">About Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<div class="app-component">
+  <header>
+    <h1>Tyre Service</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Discover a World of Possibilities</h2>
+        <p>Explore our amazing features and services.</p>
+        <a href="#" class="cta-button">Get Started</a>
+      </div>
+    </section>
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <i class="fas fa-check"></i>
+          <h3>Feature </h3>
+          <p>Paragraph</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-check"></i>
+          <h3>Feature </h3>
+          <p>Paragraph</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-check"></i>
+          <h3>Feature </h3>
+          <p>Paragraph</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Tyre Web. All rights reserved.</p>
+  </footer>
+</div>
